@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#131313;
+    color:#EEEEEE;
+    font-family: Poppins, sans-serif;
+}
+
+.navbar img{
+    height: 32px;
+    width: 40px;
+    margin-top: -5px;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    position:relative;
+    align-items: center;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 13px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+.navbar h1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.1;
+}
+.truncate{
+    margin-left: 20px;
+    margin-right: 25%;
+}
+.navbar h1, .navbar h2{
+    display: block;
+}
+.navbar h2{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.ash-colour a{
+    font-size: 14px;
+    color:hsl(0, 0%, 26%);
+    margin:10px;
+    padding-left: 5px;
+    font-weight: 500;
+    justify-content:left;
+    
+}
+.ash-colour a:hover{
+color:white;
+}
+
+.ash-colour a .colour{
+    margin-right: 5px;
+}
+.ash-colour a .colour:hover{
+    filter:brightness(100%) contrast(100%);
+}
+
+.action{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    grid-gap: 10px;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 0px 15px;
+    margin: 0px 0px 0px 15px;
+
+}
+
+
+.navbar button{
+    width: 92px;
+    height: 35px;
+    border: thin solid hsl(0, 0%, 26%);
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.navbar button .log-icon{
+    background-color: #000000;
+}
+ .s-box{
+    height: 35px;
+    width: 48px;
+    border: thin solid hsl(0, 0%, 26%);
+    border-radius: 2px;
+    padding: 10px;
+    background-color: #000000;
+    text-align: center;
+    margin-left:-15px
+
+}
+
+.action a .blue-box{
+    background-color: #228cd2;
+    height: 35px;
+    width: 145px;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 10px;
+}
+.toolbar{
+    background-color: rgba(37, 37, 37, .8);
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow{
+    display: flex;
+}
+
+.colour{
+filter: brightness(50%) contrast(119%);
+}
+button{
+    background-color: hsl(0, 0%, 26%);
+    border: 0;
+    border-radius: 2px;
+    height: 45px;
+    width:40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+button :disabled, button[disabled]{
+    background-color: hsla(0,0%,100%,.04);
+    cursor: not-allowed;
+    color: white;
+}
+
+.files{
+    max-width: 255px;
+    animation-duration: 0s;
+    position: relative;
+    text-decoration: none;
+    background-color:#252525;
+    color: #EEEEEE;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.files .cover, .files{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.files .cover{
+    height: 185px;
+    background:#414141;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover img{
+  max-width: 228px;
+  animation-duration: 0s;
+}
+
+.files .info{
+    box-shadow: 0 -1px 2px rgb(0 0 0 / 60%);
+    position: relative;
+    z-index: 5;
+}
+.info{
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+
+.info .code{
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #33a9dc;
+}
+
+.info .title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.info .paragraph{
+    opacity: 0.7;
+}
+.info .icon .displayname, .footer .label, .info .paragraph{
+    font-size: 12px;
+}
+
+.info .icon{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    background-color: hsla(0,0%,100%,.05);
+    color:#EEEEEE;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.footer .f-icons{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    grid-gap: 20px;
+    gap: 20px;
+    border-radius: 2px;
+    background-color: hsla(0,0%,100%,.1);
+    justify-content: space-evenly;
+}
+
+.footer .f-icons .f-icon{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 33.33%;
+    border-left: 1px solid rgba(0,0,0,.2);
+    box-shadow: -1px 0 0 0 hsl(0deg 0% 100% / 10%);
+    justify-content: center;
+}
+
+.footer .f-icons .f-icon:first-child{
+    box-shadow: none;
+    border-left: none;
+}
+
+.footer .f-icon{
+    height: 14px;
+    width: 14px;
+}
+
+span.icon-container{
+    border: 0;
+    box-shadow: none;
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
