@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.6rem;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
+.logo {
+    
+    /* padding-top: 10px; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.list-items {
+display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+span {
+    margin: 0 10px;
+}
+
+nav ul li {
+   list-style-type: none;
+   margin-left: 1rem;
+   
+   /* padding: 0.7rem 0; */
+}
+
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-img {
+    padding-right: 3.5px;
+    /* vertical-align: middle; */
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.start-coding {
+    background-color: rgb(70, 127, 252);
+    color: white;
+    padding: 0.5em 1.1em;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.waves {
+    width: 22px;
+    margin-right: 0.4em;
+}
+
+.nav-login {
+    /* border: 0.3px solid whitesmoke; */
+    border: 1px rgba(255, 255, 255, 0.308) solid;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px;
+    color: white;
+}
+
+.login-img {
+    /* vertical-align: middle; */
+    margin-right: 0.4em;
+    width: 22px;
+}
+
+.zoom {
+    border: 1px rgba(255, 255, 255, 0.308) solid;
+    padding: 0.5em 1.1em;
+    border-radius: 3px;
+}
+
+.zoom-img {
+    /* vertical-align: middle; */
+    width: 18px;
+}
+
+/* Hero section */
+.logo-text {
+    margin: 0 auto;
+    
+}
+
+.logo-text-div {
+    width: 100%;
+    display: flex;
+}
