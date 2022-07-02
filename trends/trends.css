@@ -311,9 +311,20 @@ span.icon-container{
     justify-content: center;
     margin-right: 10px;
 }
-
-
-
+footer{
+    background-color: #414141;
+    display: flex;
+    gap: 25%;
+}
+footer li a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+footer .skriper{
+    display:flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
 
 @media(max-width:375px){
     .navbar .truncate,.ash-colour, .action .s-coding, .action .login{
