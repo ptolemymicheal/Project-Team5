@@ -7,6 +7,7 @@
 body{
     margin: 0;
     padding: 0;
+    max-width: 1440px;
     background-color:#131313;
     color:#EEEEEE;
     font-family: Poppins, sans-serif;
@@ -40,7 +41,7 @@ body{
 }
 .truncate{
     margin-left: 20px;
-    margin-right: 25%;
+    margin-right: 28%;
 }
 .navbar h1, .navbar h2{
     display: block;
@@ -107,12 +108,14 @@ color:white;
     padding: 10px;
     background-color: #000000;
     text-align: center;
-    margin-left:-15px
+    margin-left:-15px;
+    margin-right:-20%;
 
 }
 
 .action a .blue-box{
     background-color: #228cd2;
+    color: #EEEEEE;
     height: 35px;
     width: 145px;
     border: none;
@@ -121,7 +124,7 @@ color:white;
 }
 .toolbar{
     background-color: rgba(37, 37, 37, .8);
-    width: 97%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
@@ -129,6 +132,7 @@ color:white;
     padding-bottom:5px;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .arrow{
@@ -160,8 +164,26 @@ button :disabled, button[disabled]{
     color: white;
 }
 
+.all{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.first-half{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.second-half{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+   
+}
+
 .files{
-    max-width: 255px;
+    max-width: 330px;
     animation-duration: 0s;
     position: relative;
     text-decoration: none;
@@ -173,7 +195,8 @@ button :disabled, button[disabled]{
     border-radius: 2px;
     align-content: flex-start;
     flex-direction: column;
-}
+   
+} 
 
 .files .cover, .files{
     display: flex;
@@ -189,8 +212,12 @@ button :disabled, button[disabled]{
 }
 
 .cover img{
-  max-width: 228px;
+  max-width: 240px;  
   animation-duration: 0s;
+}
+
+ .cover img:hover{
+     max-width: 225px;
 }
 
 .files .info{
@@ -235,30 +262,30 @@ button :disabled, button[disabled]{
     white-space: nowrap;
 }
 
-.footer{
+.foot-icon{
     padding: 10px;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
     background-color: hsla(0,0%,100%,.05);
     color:#EEEEEE;
-    padding-left: 10px;
-    padding-right: 10px;
-
 }
 
-.footer .f-icons{
+.foot-icon span.label{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.foot-icon .f-icons{
     display: flex;
     padding: 10px;
     width: 100%;
-    grid-gap: 20px;
     gap: 20px;
     border-radius: 2px;
     background-color: hsla(0,0%,100%,.1);
     justify-content: space-evenly;
 }
 
-.footer .f-icons .f-icon{
+.foot-icon .f-icons .f-icon{
     display: flex;
     align-items: center;
     align-content: center;
@@ -268,24 +295,47 @@ button :disabled, button[disabled]{
     justify-content: center;
 }
 
-.footer .f-icons .f-icon:first-child{
+.foot-icon .f-icons .f-icon:first-child{
     box-shadow: none;
     border-left: none;
-}
-
-.footer .f-icon{
-    height: 14px;
-    width: 14px;
 }
 
 span.icon-container{
     border: 0;
     box-shadow: none;
     display: inline-block;
-    padding: 0;
+    padding:0;
     vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+}
+
+
+
+
+@media(max-width:375px){
+    .navbar .truncate,.ash-colour, .action .s-coding, .action .login{
+        visibility: hidden;
+    }
+    .action a span .blue-box{
+        max-width: max-content;
+    }
+
+    .toolbar{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .first-half, .second-half{
+        flex-direction: column;
+    }
+    .files{
+        max-width: 350px;
+    }
+    .truncate{
+        margin-left: 20px;
+        margin-right: 10px;
+    }
 }
