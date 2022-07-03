@@ -311,6 +311,7 @@ span.icon-container{
     justify-content: center;
     margin-right: 10px;
 }
+ /*<<<<<<< main*/ 
 footer{
     background-color: #414141;
     display: flex;
@@ -325,6 +326,11 @@ footer .skriper{
     flex-direction: column;
     margin-left: 15px;
 }
+ /*=======*/ 
+
+
+
+ /*>>>>>>> main*/ 
 
 @media(max-width:375px){
     .navbar .truncate,.ash-colour, .action .s-coding, .action .login{
